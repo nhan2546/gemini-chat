@@ -9,7 +9,7 @@ import { ChatMessage } from '../types';
 export const sendMessage = async (messages: ChatMessage[]): Promise<string> => {
   // The backend proxy is expected to be at `/api/chat.php` relative to the main site's domain.
   // For local development or different domains, you might need to use a full URL and handle CORS.
-  const response = await fetch('https://web-chat-bot-php.onrender.com/api/chat.php', {
+  const response = await fetch('https://shoptaongon.vn/api/chat.php', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
